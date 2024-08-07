@@ -1,4 +1,4 @@
-package com.pecodigos.gestao_vagas.modules.company.entities.repositories;
+package com.pecodigos.gestao_vagas.modules.company.repositories;
 
 import com.pecodigos.gestao_vagas.modules.company.entities.JobEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

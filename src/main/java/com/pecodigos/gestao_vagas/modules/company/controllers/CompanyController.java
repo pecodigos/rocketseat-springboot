@@ -1,8 +1,7 @@
-package com.pecodigos.gestao_vagas.modules.controllers;
+package com.pecodigos.gestao_vagas.modules.company.controllers;
 
-import com.pecodigos.gestao_vagas.exceptions.UserFoundException;
 import com.pecodigos.gestao_vagas.modules.company.entities.CompanyEntity;
-import com.pecodigos.gestao_vagas.modules.company.entities.useCases.CreateCompanyUseCase;
+import com.pecodigos.gestao_vagas.modules.company.useCases.CreateCompanyUseCase;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
