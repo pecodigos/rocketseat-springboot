@@ -2,6 +2,7 @@ package com.pecodigos.gestao_vagas.modules.candidates.useCases;
 
 import com.pecodigos.gestao_vagas.exceptions.JobNotFoundException;
 import com.pecodigos.gestao_vagas.exceptions.UserNotFoundException;
+import com.pecodigos.gestao_vagas.modules.candidates.entities.ApplyJobEntity;
 import com.pecodigos.gestao_vagas.modules.candidates.repositories.ApplyJobRepository;
 import com.pecodigos.gestao_vagas.modules.candidates.repositories.CandidateRepository;
 import com.pecodigos.gestao_vagas.modules.company.repositories.JobRepository;
@@ -24,7 +25,7 @@ public class ApplyJobCandidateUseCase {
 
     // ID de candidato
     // ID da vaga
-    public void execute(UUID candidateId, UUID jobId) {
+    public ApplyJobEntity execute(UUID candidateId, UUID jobId) {
         // Validar se candidato existe
         this.candidateRepository.findById(candidateId).orElseThrow(UserNotFoundException::new);
 
@@ -33,6 +34,10 @@ public class ApplyJobCandidateUseCase {
 
 
         // Inscrever candidato na vaga
+        var applyJob = ApplyJobEntity.builder()
+                .candidateId(candidateId).jobId(jobId).build();
+
+        return applyJobRepository.save(applyJob);
     }
 
 }
