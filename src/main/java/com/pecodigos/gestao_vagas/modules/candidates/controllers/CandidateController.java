@@ -1,6 +1,6 @@
 package com.pecodigos.gestao_vagas.modules.candidates.controllers;
 
-import com.pecodigos.gestao_vagas.modules.candidates.CandidateEntity;
+import com.pecodigos.gestao_vagas.modules.candidates.entities.CandidateEntity;
 import com.pecodigos.gestao_vagas.modules.candidates.useCases.CreateCandidateUseCase;
 import com.pecodigos.gestao_vagas.modules.candidates.useCases.ListAllJobsByFilterUseCase;
 import com.pecodigos.gestao_vagas.modules.candidates.useCases.ProfileCandidateUseCase;

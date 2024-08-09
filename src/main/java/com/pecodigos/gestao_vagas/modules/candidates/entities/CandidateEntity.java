@@ -1,4 +1,4 @@
-package com.pecodigos.gestao_vagas.modules.candidates;
+package com.pecodigos.gestao_vagas.modules.candidates.entities;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;

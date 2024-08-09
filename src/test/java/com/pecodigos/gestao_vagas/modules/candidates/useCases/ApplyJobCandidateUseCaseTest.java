@@ -2,8 +2,8 @@ package com.pecodigos.gestao_vagas.modules.candidates.useCases;
 
 import com.pecodigos.gestao_vagas.exceptions.JobNotFoundException;
 import com.pecodigos.gestao_vagas.exceptions.UserNotFoundException;
-import com.pecodigos.gestao_vagas.modules.candidates.CandidateEntity;
-import com.pecodigos.gestao_vagas.modules.candidates.CandidateRepository;
+import com.pecodigos.gestao_vagas.modules.candidates.entities.CandidateEntity;
+import com.pecodigos.gestao_vagas.modules.candidates.repositories.CandidateRepository;
 import com.pecodigos.gestao_vagas.modules.company.repositories.JobRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

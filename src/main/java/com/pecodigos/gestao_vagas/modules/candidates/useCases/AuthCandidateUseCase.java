@@ -2,7 +2,7 @@ package com.pecodigos.gestao_vagas.modules.candidates.useCases;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
-import com.pecodigos.gestao_vagas.modules.candidates.CandidateRepository;
+import com.pecodigos.gestao_vagas.modules.candidates.repositories.CandidateRepository;
 import com.pecodigos.gestao_vagas.modules.candidates.dto.AuthCandidateRequestDTO;
 import com.pecodigos.gestao_vagas.modules.candidates.dto.AuthCandidateResponseDTO;
 import org.springframework.beans.factory.annotation.Autowired;
