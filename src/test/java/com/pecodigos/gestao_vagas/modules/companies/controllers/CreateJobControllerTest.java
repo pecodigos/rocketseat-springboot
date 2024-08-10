@@ -1,6 +1,5 @@
 package com.pecodigos.gestao_vagas.modules.companies.controllers;
 
-import com.pecodigos.gestao_vagas.exceptions.CompanyNotFoundException;
 import com.pecodigos.gestao_vagas.modules.companies.dto.CreateJobDTO;
 import com.pecodigos.gestao_vagas.modules.companies.entities.CompanyEntity;
 import com.pecodigos.gestao_vagas.modules.companies.repositories.CompanyRepository;
@@ -23,8 +22,6 @@ import org.springframework.web.context.WebApplicationContext;
 
 import java.util.UUID;
 
-import static org.junit.jupiter.api.Assertions.assertInstanceOf;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
