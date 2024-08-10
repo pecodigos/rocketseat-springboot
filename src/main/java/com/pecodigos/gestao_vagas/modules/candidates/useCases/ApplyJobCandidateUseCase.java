@@ -5,7 +5,7 @@ import com.pecodigos.gestao_vagas.exceptions.UserNotFoundException;
 import com.pecodigos.gestao_vagas.modules.candidates.entities.ApplyJobEntity;
 import com.pecodigos.gestao_vagas.modules.candidates.repositories.ApplyJobRepository;
 import com.pecodigos.gestao_vagas.modules.candidates.repositories.CandidateRepository;
-import com.pecodigos.gestao_vagas.modules.company.repositories.JobRepository;
+import com.pecodigos.gestao_vagas.modules.companies.repositories.JobRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.pecodigos.gestao_vagas.modules.company.dto;
+package com.pecodigos.gestao_vagas.modules.companies.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

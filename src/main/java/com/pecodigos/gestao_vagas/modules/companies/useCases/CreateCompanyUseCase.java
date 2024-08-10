@@ -1,8 +1,8 @@
-package com.pecodigos.gestao_vagas.modules.company.useCases;
+package com.pecodigos.gestao_vagas.modules.companies.useCases;
 
 import com.pecodigos.gestao_vagas.exceptions.UserFoundException;
-import com.pecodigos.gestao_vagas.modules.company.entities.CompanyEntity;
-import com.pecodigos.gestao_vagas.modules.company.repositories.CompanyRepository;
+import com.pecodigos.gestao_vagas.modules.companies.entities.CompanyEntity;
+import com.pecodigos.gestao_vagas.modules.companies.repositories.CompanyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

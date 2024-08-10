@@ -1,10 +1,9 @@
-package com.pecodigos.gestao_vagas.modules.company.controllers;
+package com.pecodigos.gestao_vagas.modules.companies.controllers;
 
-import com.pecodigos.gestao_vagas.modules.company.dto.CreateJobDTO;
-import com.pecodigos.gestao_vagas.modules.company.entities.JobEntity;
-import com.pecodigos.gestao_vagas.modules.company.useCases.CreateJobUseCase;
+import com.pecodigos.gestao_vagas.modules.companies.dto.CreateJobDTO;
+import com.pecodigos.gestao_vagas.modules.companies.entities.JobEntity;
+import com.pecodigos.gestao_vagas.modules.companies.useCases.CreateJobUseCase;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

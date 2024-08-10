@@ -5,7 +5,7 @@ import com.pecodigos.gestao_vagas.modules.candidates.useCases.ApplyJobCandidateU
 import com.pecodigos.gestao_vagas.modules.candidates.useCases.CreateCandidateUseCase;
 import com.pecodigos.gestao_vagas.modules.candidates.useCases.ListAllJobsByFilterUseCase;
 import com.pecodigos.gestao_vagas.modules.candidates.useCases.ProfileCandidateUseCase;
-import com.pecodigos.gestao_vagas.modules.company.entities.JobEntity;
+import com.pecodigos.gestao_vagas.modules.companies.entities.JobEntity;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;

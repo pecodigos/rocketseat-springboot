@@ -1,6 +1,6 @@
 package com.pecodigos.gestao_vagas.modules.candidates.entities;
 
-import com.pecodigos.gestao_vagas.modules.company.entities.JobEntity;
+import com.pecodigos.gestao_vagas.modules.companies.entities.JobEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
