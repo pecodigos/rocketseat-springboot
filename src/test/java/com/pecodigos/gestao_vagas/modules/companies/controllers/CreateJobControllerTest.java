@@ -1,5 +1,6 @@
 package com.pecodigos.gestao_vagas.modules.companies.controllers;
 
+import com.pecodigos.gestao_vagas.exceptions.CompanyNotFoundException;
 import com.pecodigos.gestao_vagas.modules.companies.dto.CreateJobDTO;
 import com.pecodigos.gestao_vagas.modules.companies.entities.CompanyEntity;
 import com.pecodigos.gestao_vagas.modules.companies.repositories.CompanyRepository;
@@ -21,6 +22,9 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import java.util.UUID;
+
+import static org.junit.jupiter.api.Assertions.assertInstanceOf;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -63,4 +67,16 @@ class CreateJobControllerTest {
 
         System.out.println(result);
     }
+
+    @Test
+    public void shouldNotBeAbleToCreateANewJobIfCompanyNotFound() throws Exception {
+        var createJobDTO = CreateJobDTO.builder().benefits("BENEFITS_TEST").description("DESCRIPTION_TEST").level("LEVEL_TEST").build();
+
+        mvc.perform(MockMvcRequestBuilders.post("/company/job/")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(TestUtils.objectToJson(createJobDTO))
+                .header("Authorization", TestUtils.generateToken(UUID.randomUUID(), "JAVAGAS_@123#")))
+                .andExpect(MockMvcResultMatchers.status().isBadRequest());
+    }
 }
+
